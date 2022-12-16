@@ -121,16 +121,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imghide.png" />
     <Content Include="imgback.png" />
     <Content Include="imgtetiren.png" />
     <Content Include="imgx.png" />
+    <Content Include="imgsee.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\see.png" />
     <None Include="Resources\x.png" />
     <None Include="Resources\back.png" />
     <None Include="Resources\tetiren.png" />
     <None Include="Resources\getstart.png" />
     <None Include="Resources\userprofile.png" />
     <Content Include="imggetstart.png" />
-    <Content Include="imguserprofile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

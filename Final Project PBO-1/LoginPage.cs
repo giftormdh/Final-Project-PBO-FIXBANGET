@@ -77,7 +77,14 @@ namespace Final_Project_PBO_1
 
         private void txtPasswordSignIn_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtPasswordSignIn.Text.Length > 0)
+            {
+                btnShowPW.Visible = true;
+            }
+            else
+            {
+                btnShowPW.Visible = false;
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -95,6 +102,35 @@ namespace Final_Project_PBO_1
         private void pictureBox1_Click_2(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ShowPW_Click(object sender, EventArgs e)
+        {
+            if (txtPasswordSignIn.PasswordChar == '*')
+            {
+                txtPasswordSignIn.PasswordChar = '\0';
+                btnShowPW.Hide();
+                btnHidePW.Show();
+                
+            }
+            else
+            {
+                txtPasswordSignIn.PasswordChar = '*';
+            }
+        }
+
+        private void btnHidePW_Click(object sender, EventArgs e)
+        {
+            if (txtPasswordSignIn.PasswordChar == '\0')
+            {
+                txtPasswordSignIn.PasswordChar = '*';
+                btnHidePW.Hide();
+                btnShowPW.Show();
+            }
+            else
+            {
+                txtPasswordSignIn.PasswordChar = '\0';
+            }
         }
     }
 }
