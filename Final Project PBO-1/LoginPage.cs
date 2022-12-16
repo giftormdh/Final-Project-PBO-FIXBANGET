@@ -82,11 +82,19 @@ namespace Final_Project_PBO_1
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //var back = new LoginPage();
+            this.Hide();
+            FirstPage firstpage = new FirstPage();
+            firstpage.Show();
+        }
 
-            //this.Hide();
+        private void label4_Click(object sender, EventArgs e)
+        {
 
-            //loginpage.Show();
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

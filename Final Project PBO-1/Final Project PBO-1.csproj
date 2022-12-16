@@ -123,6 +123,8 @@
   <ItemGroup>
     <Content Include="imgback.png" />
     <Content Include="imgtetiren.png" />
+    <Content Include="imgx.png" />
+    <None Include="Resources\x.png" />
     <None Include="Resources\back.png" />
     <None Include="Resources\tetiren.png" />
     <None Include="Resources\getstart.png" />
