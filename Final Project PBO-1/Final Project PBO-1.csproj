@@ -121,7 +121,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imgback.png" />
     <Content Include="imgtetiren.png" />
+    <None Include="Resources\back.png" />
     <None Include="Resources\tetiren.png" />
     <None Include="Resources\getstart.png" />
     <None Include="Resources\userprofile.png" />

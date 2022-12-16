@@ -79,5 +79,14 @@ namespace Final_Project_PBO_1
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //var back = new LoginPage();
+
+            //this.Hide();
+
+            //loginpage.Show();
+        }
     }
 }
