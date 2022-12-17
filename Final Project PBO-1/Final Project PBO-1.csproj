@@ -122,6 +122,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="imgtetiren.png" />
+    <None Include="Resources\exit %281%29.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\bars-progress.png" />
+    <None Include="Resources\arrow-right %281%29.png" />
+    <None Include="Resources\time-past %281%29.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\list-check.png" />
+    <None Include="Resources\home %282%29.png" />
     <None Include="Resources\tetiren.png" />
     <None Include="Resources\getstart.png" />
     <None Include="Resources\userprofile.png" />
