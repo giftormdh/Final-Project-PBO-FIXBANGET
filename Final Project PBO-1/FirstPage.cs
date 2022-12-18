@@ -22,16 +22,6 @@ namespace Final_Project_PBO_1
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             var loginpage = new LoginPage();
@@ -44,6 +34,11 @@ namespace Final_Project_PBO_1
         private void FirstPageExit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

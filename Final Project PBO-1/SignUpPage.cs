@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,8 @@ namespace Final_Project_PBO_1
 {
     public partial class SignUpPage : Form
     {
+        public static DataUser inputData = new DataUser();
+        
         public SignUpPage()
         {
             InitializeComponent();
@@ -103,5 +106,17 @@ namespace Final_Project_PBO_1
             }
         }
 
+        private void btnSignUp_Click_1(object sender, EventArgs e)
+        {
+            var homepage = new HomePage();
+            this.Hide();
+            homepage.Show();
+
+            inputData.name = txtNameSignUp.Text;
+            inputData.email = txtEmailSignUp.Text;
+            inputData.username = txtUsernameSignUp.Text;
+            inputData.password = txtPasswordSignUp.Text;
+
+        }
     }
 }
