@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -116,6 +117,18 @@ namespace Final_Project_PBO_1
             inputData.email = txtEmailSignUp.Text;
             inputData.username = txtUsernameSignUp.Text;
             inputData.password = txtPasswordSignUp.Text;
+
+            DataUser datauser = new DataUser(0, inputData.name, inputData.email, inputData.username, inputData.password);
+
+            List<string> signupdata = new List<string> { "0", inputData.name, inputData.email, inputData.username, inputData.password };
+            foreach (string signup in signupdata)
+            {
+                homepage.testestes.Text = homepage.testestes.Text + signup + " , "; 
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
