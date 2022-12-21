@@ -73,6 +73,16 @@ namespace Final_Project_PBO_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap borrower {
+            get {
+                object obj = ResourceManager.GetObject("borrower", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap getstart {
             get {
                 object obj = ResourceManager.GetObject("getstart", resourceCulture);
@@ -86,6 +96,16 @@ namespace Final_Project_PBO_1.Properties {
         internal static System.Drawing.Bitmap hide {
             get {
                 object obj = ResourceManager.GetObject("hide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemlist {
+            get {
+                object obj = ResourceManager.GetObject("itemlist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -137,6 +137,8 @@
     <Content Include="imgtetiren.png" />
     <Content Include="imgx.png" />
     <Content Include="imgsee.png" />
+    <None Include="Resources\itemlist.png" />
+    <None Include="Resources\borrower.png" />
     <None Include="Resources\hide.png" />
     <None Include="Resources\see.png" />
     <None Include="Resources\x.png" />
