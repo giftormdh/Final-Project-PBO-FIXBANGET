@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.txtUsernameSignUp = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtEmailSignUpPage = new System.Windows.Forms.Label();
+            this.txtPasswordSignUpPage = new System.Windows.Forms.Label();
             this.txtEmailSignUp = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtNameSignUpPage = new System.Windows.Forms.Label();
             this.txtNameSignUp = new System.Windows.Forms.MaskedTextBox();
             this.txtPasswordSignUp = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtConfirmSignUpPage = new System.Windows.Forms.Label();
             this.ClearDataSignUp = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,29 +60,29 @@
             this.txtUsernameSignUp.Size = new System.Drawing.Size(200, 17);
             this.txtUsernameSignUp.TabIndex = 8;
             // 
-            // label2
+            // txtEmailSignUpPage
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(185, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 19);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Email";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.txtEmailSignUpPage.AutoSize = true;
+            this.txtEmailSignUpPage.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailSignUpPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmailSignUpPage.Location = new System.Drawing.Point(185, 105);
+            this.txtEmailSignUpPage.Name = "txtEmailSignUpPage";
+            this.txtEmailSignUpPage.Size = new System.Drawing.Size(39, 19);
+            this.txtEmailSignUpPage.TabIndex = 7;
+            this.txtEmailSignUpPage.Text = "Email";
+            this.txtEmailSignUpPage.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // txtPasswordSignUpPage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(185, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Username";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.txtPasswordSignUpPage.AutoSize = true;
+            this.txtPasswordSignUpPage.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordSignUpPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPasswordSignUpPage.Location = new System.Drawing.Point(185, 152);
+            this.txtPasswordSignUpPage.Name = "txtPasswordSignUpPage";
+            this.txtPasswordSignUpPage.Size = new System.Drawing.Size(61, 19);
+            this.txtPasswordSignUpPage.TabIndex = 6;
+            this.txtPasswordSignUpPage.Text = "Password";
+            this.txtPasswordSignUpPage.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtEmailSignUp
             // 
@@ -94,17 +94,17 @@
             this.txtEmailSignUp.TabIndex = 5;
             this.txtEmailSignUp.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtUsername_MaskInputRejected);
             // 
-            // label3
+            // txtNameSignUpPage
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(185, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 19);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.txtNameSignUpPage.AutoSize = true;
+            this.txtNameSignUpPage.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameSignUpPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNameSignUpPage.Location = new System.Drawing.Point(185, 56);
+            this.txtNameSignUpPage.Name = "txtNameSignUpPage";
+            this.txtNameSignUpPage.Size = new System.Drawing.Size(42, 19);
+            this.txtNameSignUpPage.TabIndex = 12;
+            this.txtNameSignUpPage.Text = "Name";
+            this.txtNameSignUpPage.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNameSignUp
             // 
@@ -127,16 +127,16 @@
             this.txtPasswordSignUp.TabIndex = 14;
             this.txtPasswordSignUp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label4
+            // txtConfirmSignUpPage
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(185, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 19);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Password";
+            this.txtConfirmSignUpPage.AutoSize = true;
+            this.txtConfirmSignUpPage.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmSignUpPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtConfirmSignUpPage.Location = new System.Drawing.Point(185, 199);
+            this.txtConfirmSignUpPage.Name = "txtConfirmSignUpPage";
+            this.txtConfirmSignUpPage.Size = new System.Drawing.Size(108, 19);
+            this.txtConfirmSignUpPage.TabIndex = 13;
+            this.txtConfirmSignUpPage.Text = "Confirm Password";
             // 
             // ClearDataSignUp
             // 
@@ -282,12 +282,12 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ClearDataSignUp);
             this.Controls.Add(this.txtPasswordSignUp);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtConfirmSignUpPage);
+            this.Controls.Add(this.txtNameSignUpPage);
             this.Controls.Add(this.txtNameSignUp);
             this.Controls.Add(this.txtUsernameSignUp);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtEmailSignUpPage);
+            this.Controls.Add(this.txtPasswordSignUpPage);
             this.Controls.Add(this.txtEmailSignUp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUpPage";
@@ -303,13 +303,13 @@
 
         #endregion
         private System.Windows.Forms.TextBox txtUsernameSignUp;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtEmailSignUpPage;
+        private System.Windows.Forms.Label txtPasswordSignUpPage;
         private System.Windows.Forms.MaskedTextBox txtEmailSignUp;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txtNameSignUpPage;
         private System.Windows.Forms.MaskedTextBox txtNameSignUp;
         private System.Windows.Forms.TextBox txtPasswordSignUp;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label txtConfirmSignUpPage;
         private System.Windows.Forms.LinkLabel ClearDataSignUp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
