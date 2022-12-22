@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Final_Project_PBO_1
 {
-    public partial class Lists : UserControl
+    public partial class HistoryList : UserControl
     {
-        public Lists()
+        public HistoryList()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -38,18 +38,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.boxList9 = new Final_Project_PBO_1.BoxList();
-            this.boxList10 = new Final_Project_PBO_1.BoxList();
-            this.boxList11 = new Final_Project_PBO_1.BoxList();
-            this.boxList12 = new Final_Project_PBO_1.BoxList();
-            this.boxList5 = new Final_Project_PBO_1.BoxList();
-            this.boxList6 = new Final_Project_PBO_1.BoxList();
-            this.boxList7 = new Final_Project_PBO_1.BoxList();
-            this.boxList8 = new Final_Project_PBO_1.BoxList();
-            this.boxList4 = new Final_Project_PBO_1.BoxList();
-            this.boxList3 = new Final_Project_PBO_1.BoxList();
-            this.boxList2 = new Final_Project_PBO_1.BoxList();
-            this.boxList1 = new Final_Project_PBO_1.BoxList();
             this.button8 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -60,7 +48,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -125,23 +112,12 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.boxList9);
-            this.panel3.Controls.Add(this.boxList10);
-            this.panel3.Controls.Add(this.boxList11);
-            this.panel3.Controls.Add(this.boxList12);
-            this.panel3.Controls.Add(this.boxList5);
-            this.panel3.Controls.Add(this.boxList6);
-            this.panel3.Controls.Add(this.boxList7);
-            this.panel3.Controls.Add(this.boxList8);
-            this.panel3.Controls.Add(this.boxList4);
-            this.panel3.Controls.Add(this.boxList3);
-            this.panel3.Controls.Add(this.boxList2);
-            this.panel3.Controls.Add(this.boxList1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(101, 163);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1249, 587);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel6
             // 
@@ -185,115 +161,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(182, 27);
             this.dateTimePicker1.TabIndex = 6;
-            // 
-            // boxList9
-            // 
-            this.boxList9.BackColor = System.Drawing.Color.White;
-            this.boxList9.Location = new System.Drawing.Point(946, 4898);
-            this.boxList9.Margin = new System.Windows.Forms.Padding(3, 3007, 3, 3007);
-            this.boxList9.Name = "boxList9";
-            this.boxList9.Size = new System.Drawing.Size(257, 1435);
-            this.boxList9.TabIndex = 11;
-            // 
-            // boxList10
-            // 
-            this.boxList10.BackColor = System.Drawing.Color.White;
-            this.boxList10.Location = new System.Drawing.Point(638, 4898);
-            this.boxList10.Margin = new System.Windows.Forms.Padding(3, 2092, 3, 2092);
-            this.boxList10.Name = "boxList10";
-            this.boxList10.Size = new System.Drawing.Size(257, 1435);
-            this.boxList10.TabIndex = 10;
-            // 
-            // boxList11
-            // 
-            this.boxList11.BackColor = System.Drawing.Color.White;
-            this.boxList11.Location = new System.Drawing.Point(335, 4898);
-            this.boxList11.Margin = new System.Windows.Forms.Padding(3, 1455, 3, 1455);
-            this.boxList11.Name = "boxList11";
-            this.boxList11.Size = new System.Drawing.Size(257, 1435);
-            this.boxList11.TabIndex = 9;
-            // 
-            // boxList12
-            // 
-            this.boxList12.BackColor = System.Drawing.Color.White;
-            this.boxList12.Location = new System.Drawing.Point(36, 4898);
-            this.boxList12.Margin = new System.Windows.Forms.Padding(3, 1012, 3, 1012);
-            this.boxList12.Name = "boxList12";
-            this.boxList12.Size = new System.Drawing.Size(257, 1435);
-            this.boxList12.TabIndex = 8;
-            // 
-            // boxList5
-            // 
-            this.boxList5.BackColor = System.Drawing.Color.White;
-            this.boxList5.Location = new System.Drawing.Point(946, 3250);
-            this.boxList5.Margin = new System.Windows.Forms.Padding(3, 2092, 3, 2092);
-            this.boxList5.Name = "boxList5";
-            this.boxList5.Size = new System.Drawing.Size(257, 1318);
-            this.boxList5.TabIndex = 7;
-            // 
-            // boxList6
-            // 
-            this.boxList6.BackColor = System.Drawing.Color.White;
-            this.boxList6.Location = new System.Drawing.Point(638, 3250);
-            this.boxList6.Margin = new System.Windows.Forms.Padding(3, 1455, 3, 1455);
-            this.boxList6.Name = "boxList6";
-            this.boxList6.Size = new System.Drawing.Size(257, 1318);
-            this.boxList6.TabIndex = 6;
-            // 
-            // boxList7
-            // 
-            this.boxList7.BackColor = System.Drawing.Color.White;
-            this.boxList7.Location = new System.Drawing.Point(335, 3250);
-            this.boxList7.Margin = new System.Windows.Forms.Padding(3, 1012, 3, 1012);
-            this.boxList7.Name = "boxList7";
-            this.boxList7.Size = new System.Drawing.Size(257, 1318);
-            this.boxList7.TabIndex = 5;
-            // 
-            // boxList8
-            // 
-            this.boxList8.BackColor = System.Drawing.Color.White;
-            this.boxList8.Location = new System.Drawing.Point(36, 3250);
-            this.boxList8.Margin = new System.Windows.Forms.Padding(3, 704, 3, 704);
-            this.boxList8.Name = "boxList8";
-            this.boxList8.Size = new System.Drawing.Size(257, 1318);
-            this.boxList8.TabIndex = 4;
-            // 
-            // boxList4
-            // 
-            this.boxList4.BackColor = System.Drawing.Color.White;
-            this.boxList4.Location = new System.Drawing.Point(946, 39);
-            this.boxList4.Margin = new System.Windows.Forms.Padding(3, 1455, 3, 1455);
-            this.boxList4.Name = "boxList4";
-            this.boxList4.Size = new System.Drawing.Size(257, 220);
-            this.boxList4.TabIndex = 3;
-            // 
-            // boxList3
-            // 
-            this.boxList3.BackColor = System.Drawing.Color.White;
-            this.boxList3.Location = new System.Drawing.Point(638, 39);
-            this.boxList3.Margin = new System.Windows.Forms.Padding(3, 1012, 3, 1012);
-            this.boxList3.Name = "boxList3";
-            this.boxList3.Size = new System.Drawing.Size(257, 220);
-            this.boxList3.TabIndex = 2;
-            // 
-            // boxList2
-            // 
-            this.boxList2.BackColor = System.Drawing.Color.White;
-            this.boxList2.Location = new System.Drawing.Point(335, 39);
-            this.boxList2.Margin = new System.Windows.Forms.Padding(3, 704, 3, 704);
-            this.boxList2.Name = "boxList2";
-            this.boxList2.Size = new System.Drawing.Size(257, 220);
-            this.boxList2.TabIndex = 1;
-            // 
-            // boxList1
-            // 
-            this.boxList1.BackColor = System.Drawing.Color.White;
-            this.boxList1.Location = new System.Drawing.Point(36, 39);
-            this.boxList1.Margin = new System.Windows.Forms.Padding(3, 490, 3, 490);
-            this.boxList1.Name = "boxList1";
-            this.boxList1.Size = new System.Drawing.Size(257, 220);
-            this.boxList1.TabIndex = 0;
-            this.boxList1.Load += new System.EventHandler(this.boxList1_Load);
             // 
             // button8
             // 
@@ -442,7 +309,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -469,18 +335,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label2;
-        private BoxList boxList9;
-        private BoxList boxList10;
-        private BoxList boxList11;
-        private BoxList boxList12;
-        private BoxList boxList5;
-        private BoxList boxList6;
-        private BoxList boxList7;
-        private BoxList boxList8;
-        private BoxList boxList4;
-        private BoxList boxList3;
-        private BoxList boxList2;
-        private BoxList boxList1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
