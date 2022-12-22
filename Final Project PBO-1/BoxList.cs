@@ -16,5 +16,17 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
+
+        public void LoadThis(object sender , EventArgs e)
+        {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+           /* this.lblGearName.Text = "It Works";*/
+
+        }
+
+
     }
 }

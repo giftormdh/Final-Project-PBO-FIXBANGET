@@ -17,7 +17,7 @@ namespace Final_Project_PBO_1
             InitializeComponent();
         }
 
-        private void HomeMenu_Load(object sender, EventArgs e)
+        public void HomeMenu_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < 10; i++)
             {
@@ -39,5 +39,14 @@ namespace Final_Project_PBO_1
 
         }
 
+        private void HomeMenu_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

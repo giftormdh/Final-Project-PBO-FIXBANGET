@@ -1,6 +1,6 @@
 ﻿namespace Final_Project_PBO_1
 {
-    partial class HistoryPage
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,25 +30,22 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnCO = new System.Windows.Forms.Button();
+            this.btnHistory = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,15 +55,15 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(26)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnCO);
+            this.panel1.Controls.Add(this.btnHistory);
+            this.panel1.Controls.Add(this.btnHome);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(101, 750);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 1;
             // 
             // panel5
             // 
@@ -77,6 +74,23 @@
             this.panel5.Size = new System.Drawing.Size(101, 100);
             this.panel5.TabIndex = 7;
             // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::Final_Project_PBO_1.Properties.Resources.exit__1_;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(0, 47);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.button4.Size = new System.Drawing.Size(101, 53);
+            this.button4.TabIndex = 4;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -84,6 +98,63 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(101, 15);
             this.panel4.TabIndex = 6;
+            // 
+            // btnCO
+            // 
+            this.btnCO.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCO.FlatAppearance.BorderSize = 0;
+            this.btnCO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCO.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCO.ForeColor = System.Drawing.Color.White;
+            this.btnCO.Image = global::Final_Project_PBO_1.Properties.Resources.add;
+            this.btnCO.Location = new System.Drawing.Point(0, 390);
+            this.btnCO.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCO.Name = "btnCO";
+            this.btnCO.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnCO.Size = new System.Drawing.Size(101, 72);
+            this.btnCO.TabIndex = 5;
+            this.btnCO.Text = "  Check Out";
+            this.btnCO.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCO.UseVisualStyleBackColor = true;
+            this.btnCO.Click += new System.EventHandler(this.btnCO_Click);
+            // 
+            // btnHistory
+            // 
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistory.FlatAppearance.BorderSize = 0;
+            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistory.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistory.ForeColor = System.Drawing.Color.White;
+            this.btnHistory.Image = global::Final_Project_PBO_1.Properties.Resources.time_past__1_;
+            this.btnHistory.Location = new System.Drawing.Point(0, 318);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnHistory.Size = new System.Drawing.Size(101, 72);
+            this.btnHistory.TabIndex = 3;
+            this.btnHistory.Text = " History";
+            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnHistory.UseVisualStyleBackColor = true;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::Final_Project_PBO_1.Properties.Resources.home__2_;
+            this.btnHome.Location = new System.Drawing.Point(0, 246);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(101, 72);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = "  Home";
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panel2
             // 
@@ -105,7 +176,7 @@
             this.panel6.Location = new System.Drawing.Point(101, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1249, 46);
-            this.panel6.TabIndex = 5;
+            this.panel6.TabIndex = 4;
             // 
             // label1
             // 
@@ -118,34 +189,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Giftor Rapopo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(101, 46);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1249, 121);
-            this.panel7.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Poppins ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 57);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "History";
-            // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(101, 167);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1249, 583);
-            this.panel3.TabIndex = 8;
             // 
             // button8
             // 
@@ -200,93 +243,30 @@
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // panel3
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Final_Project_PBO_1.Properties.Resources.Asset_12;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(0, 47);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.button4.Size = new System.Drawing.Size(101, 53);
-            this.button4.TabIndex = 4;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(101, 46);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1249, 704);
+            this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button5
+            // MainForm
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Final_Project_PBO_1.Properties.Resources.add;
-            this.button5.Location = new System.Drawing.Point(0, 390);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.button5.Size = new System.Drawing.Size(101, 72);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "  Check Out";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Final_Project_PBO_1.Properties.Resources.time_past__1_;
-            this.button3.Location = new System.Drawing.Point(0, 318);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.button3.Size = new System.Drawing.Size(101, 72);
-            this.button3.TabIndex = 3;
-            this.button3.Text = " History";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Final_Project_PBO_1.Properties.Resources.home__2_;
-            this.button1.Location = new System.Drawing.Point(0, 246);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.button1.Size = new System.Drawing.Size(101, 72);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "  Home";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // HistoryPage
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1350, 750);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Poppins", 6.985075F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "HistoryPage";
-            this.Text = "HistoryPage";
+            this.Name = "MainForm";
+            this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -298,9 +278,9 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCO;
+        private System.Windows.Forms.Button btnHistory;
+        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
@@ -308,8 +288,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
     }
 }

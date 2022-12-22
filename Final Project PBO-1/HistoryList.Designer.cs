@@ -45,13 +45,13 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Poppins", 10.20895F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(104, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(523, 34);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Accepted";
+            this.label2.Text = "DateCheck";
             // 
             // HistoryList
             // 
@@ -60,6 +60,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "HistoryList";
+            this.Load += new System.EventHandler.(this.LoadThis)
             this.Size = new System.Drawing.Size(1249, 59);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -28,39 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblGearName = new System.Windows.Forms.Label();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // lblGearName
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Final_Project_PBO_1.Properties.Resources.cross_circle__1_;
-            this.button1.Location = new System.Drawing.Point(531, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 45);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblGearName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblGearName.Font = new System.Drawing.Font("Poppins", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGearName.Location = new System.Drawing.Point(0, 0);
+            this.lblGearName.Name = "lblGearName";
+            this.lblGearName.Size = new System.Drawing.Size(412, 45);
+            this.lblGearName.TabIndex = 11;
+            this.lblGearName.Text = "GearName";
+            this.lblGearName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // btnRemove
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label4.Font = new System.Drawing.Font("Poppins", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(383, 45);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "GearName";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemove.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Image = global::Final_Project_PBO_1.Properties.Resources.cross_circle__1_;
+            this.btnRemove.Location = new System.Drawing.Point(531, 0);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(65, 45);
+            this.btnRemove.TabIndex = 10;
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblGearName);
+            this.Controls.Add(this.btnRemove);
             this.Name = "CheckOut";
             this.Size = new System.Drawing.Size(596, 45);
             this.ResumeLayout(false);
@@ -68,7 +69,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Label lblGearName;
     }
 }

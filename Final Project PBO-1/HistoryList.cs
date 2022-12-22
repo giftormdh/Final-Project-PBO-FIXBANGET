@@ -16,5 +16,9 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
+        public void LoadThis(object sender, EventArgs e)
+        {
+
+        }
     }
 }
