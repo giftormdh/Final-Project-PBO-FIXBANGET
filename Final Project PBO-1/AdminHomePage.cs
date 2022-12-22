@@ -16,5 +16,26 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            var homepage = new HomePage();
+            this.Hide();
+            homepage.Show();
+        }
+
+        private void AdminHomePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminPageLogout_Click(object sender, EventArgs e)
+        {
+            var backtologinpage = new LoginPage();
+
+            this.Hide();
+
+            backtologinpage.Show();
+        }
     }
 }

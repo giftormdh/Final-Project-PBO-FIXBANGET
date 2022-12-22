@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Final_Project_PBO_1.Controller;
+using Final_Project_PBO_1.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,11 +32,27 @@ namespace Final_Project_PBO_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if( txtUsernameSignIn.Text=="variabel_username" && txtPasswordSignIn.Text == "variabel_password")
+            AccountController accountController = new AccountController();
+            List<Account> accoutList = accountController.GetAllAccount();
+            string UsernameToFind = txtUsernameSignIn.Text;
+            Account FoundUser = accoutList.Find(x => x.Name == UsernameToFind);
+
+            if (FoundUser != null && txtPasswordSignIn.Text == FoundUser.password)
             {
                 var homepage = new HomePage();
                 this.Hide();
                 homepage.Show();
+            }
+
+            else if (txtUsernameSignIn.Text=="admin" && txtPasswordSignIn.Text == "admin")
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to login as admin?", "Comfirm", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    var adminhomepage = new AdminHomePage();
+                    this.Hide();
+                    adminhomepage.Show();
+                }
             }
 
             else

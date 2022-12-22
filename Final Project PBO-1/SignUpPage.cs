@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Final_Project_PBO_1.Controller;
+using Final_Project_PBO_1.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +16,6 @@ namespace Final_Project_PBO_1
 {
     public partial class SignUpPage : Form
     {
-        public static DataUser inputData = new DataUser();
         
         public SignUpPage()
         {
@@ -28,22 +29,22 @@ namespace Final_Project_PBO_1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (txtPasswordSignUp.Text.Length > 0)
+            if (txtConfirmPasswordSignUp.Text.Length > 0)
             {
-                btnShowPW.Visible = true;
+                btnShowCPW.Visible = true;
             }
             else
             {
-                btnShowPW.Visible = false;
+                btnShowCPW.Visible = false;
             }
         }
 
         private void ClearDataSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            txtUsernameSignUp.Clear();
-            txtNameSignUp.Clear();
-            txtEmailSignUp.Clear();
             txtPasswordSignUp.Clear();
+            txtNameSignUp.Clear();
+            txtUsernameSignUp.Clear();
+            txtConfirmPasswordSignUp.Clear();
         }
 
         private void txtNameSignUp_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -80,19 +81,67 @@ namespace Final_Project_PBO_1
 
         private void btnShowPW_Click(object sender, EventArgs e)
         {
-            if (txtPasswordSignUp.PasswordChar == '*')
+            if (txtConfirmPasswordSignUp.PasswordChar == '*')
             {
-                txtPasswordSignUp.PasswordChar = '\0';
-                btnShowPW.Hide();
-                btnHidePW.Show();
+                txtConfirmPasswordSignUp.PasswordChar = '\0';
+                btnShowCPW.Hide();
+                btnHideCPW.Show();
             }
             else
             {
-                txtPasswordSignUp.PasswordChar = '*';
+                txtConfirmPasswordSignUp.PasswordChar = '*';
             }
         }
 
         private void btnHidePW_Click(object sender, EventArgs e)
+        {
+            if (txtConfirmPasswordSignUp.PasswordChar == '\0')
+            {
+                txtConfirmPasswordSignUp.PasswordChar = '*';
+                btnHideCPW.Hide();
+                btnShowCPW.Show();
+
+            }
+            else
+            {
+                txtConfirmPasswordSignUp.PasswordChar = '\0';
+            }
+        }
+
+        private void btnSignUp_Click_1(object sender, EventArgs e)
+        {
+            if(txtPasswordSignUp.Text != txtConfirmPasswordSignUp.Text)
+            {
+                DialogResult pwnotmatch = MessageBox.Show("Your Password and Confirmation Does Not Match");
+            }
+            else 
+            { 
+            var homepage = new HomePage();
+            this.Hide();
+            homepage.Show();
+            AccountController accountController = new AccountController();
+            accountController.PostAccount(txtNameSignUp.Text, txtUsernameSignUp.Text, txtPasswordSignUp.Text);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsernameSignUp_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPasswordSignUp.Text.Length > 0)
+            {
+                btnShowPW.Visible = true;
+            }
+            else
+            {
+                btnShowPW.Visible = false;
+            }
+        }
+
+        private void btnHidePW_Click_1(object sender, EventArgs e)
         {
             if (txtPasswordSignUp.PasswordChar == '\0')
             {
@@ -107,29 +156,18 @@ namespace Final_Project_PBO_1
             }
         }
 
-        private void btnSignUp_Click_1(object sender, EventArgs e)
+        private void btnShowPW_Click_1(object sender, EventArgs e)
         {
-            var homepage = new HomePage();
-            this.Hide();
-            homepage.Show();
-
-            inputData.name = txtNameSignUp.Text;
-            inputData.email = txtEmailSignUp.Text;
-            inputData.username = txtUsernameSignUp.Text;
-            inputData.password = txtPasswordSignUp.Text;
-
-            DataUser datauser = new DataUser(0, inputData.name, inputData.email, inputData.username, inputData.password);
-
-            List<string> signupdata = new List<string> { "0", inputData.name, inputData.email, inputData.username, inputData.password };
-            foreach (string signup in signupdata)
+            if (txtPasswordSignUp.PasswordChar == '*')
             {
-                homepage.testestes.Text = homepage.testestes.Text + signup + " , "; 
+                txtPasswordSignUp.PasswordChar = '\0';
+                btnShowPW.Hide();
+                btnHidePW.Show();
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            else
+            {
+                txtPasswordSignUp.PasswordChar = '*';
+            }
         }
     }
 }

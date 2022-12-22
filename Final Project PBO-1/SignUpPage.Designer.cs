@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtUsernameSignUp = new System.Windows.Forms.TextBox();
+            this.txtPasswordSignUp = new System.Windows.Forms.TextBox();
             this.txtEmailSignUpPage = new System.Windows.Forms.Label();
             this.txtPasswordSignUpPage = new System.Windows.Forms.Label();
-            this.txtEmailSignUp = new System.Windows.Forms.MaskedTextBox();
+            this.txtUsernameSignUp = new System.Windows.Forms.MaskedTextBox();
             this.txtNameSignUpPage = new System.Windows.Forms.Label();
             this.txtNameSignUp = new System.Windows.Forms.MaskedTextBox();
-            this.txtPasswordSignUp = new System.Windows.Forms.TextBox();
+            this.txtConfirmPasswordSignUp = new System.Windows.Forms.TextBox();
             this.txtConfirmSignUpPage = new System.Windows.Forms.Label();
             this.ClearDataSignUp = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,20 +45,24 @@
             this.btnSignUp = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backSignUpPage = new System.Windows.Forms.PictureBox();
+            this.btnHideCPW = new System.Windows.Forms.Button();
+            this.btnShowCPW = new System.Windows.Forms.Button();
             this.btnHidePW = new System.Windows.Forms.Button();
             this.btnShowPW = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backSignUpPage)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtUsernameSignUp
+            // txtPasswordSignUp
             // 
-            this.txtUsernameSignUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsernameSignUp.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsernameSignUp.Location = new System.Drawing.Point(189, 174);
-            this.txtUsernameSignUp.Name = "txtUsernameSignUp";
-            this.txtUsernameSignUp.Size = new System.Drawing.Size(200, 17);
-            this.txtUsernameSignUp.TabIndex = 8;
+            this.txtPasswordSignUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPasswordSignUp.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordSignUp.Location = new System.Drawing.Point(189, 174);
+            this.txtPasswordSignUp.Name = "txtPasswordSignUp";
+            this.txtPasswordSignUp.PasswordChar = '*';
+            this.txtPasswordSignUp.Size = new System.Drawing.Size(200, 17);
+            this.txtPasswordSignUp.TabIndex = 8;
+            this.txtPasswordSignUp.TextChanged += new System.EventHandler(this.txtUsernameSignUp_TextChanged);
             // 
             // txtEmailSignUpPage
             // 
@@ -67,9 +71,9 @@
             this.txtEmailSignUpPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmailSignUpPage.Location = new System.Drawing.Point(185, 105);
             this.txtEmailSignUpPage.Name = "txtEmailSignUpPage";
-            this.txtEmailSignUpPage.Size = new System.Drawing.Size(39, 19);
+            this.txtEmailSignUpPage.Size = new System.Drawing.Size(65, 19);
             this.txtEmailSignUpPage.TabIndex = 7;
-            this.txtEmailSignUpPage.Text = "Email";
+            this.txtEmailSignUpPage.Text = "Username";
             this.txtEmailSignUpPage.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtPasswordSignUpPage
@@ -84,15 +88,15 @@
             this.txtPasswordSignUpPage.Text = "Password";
             this.txtPasswordSignUpPage.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtEmailSignUp
+            // txtUsernameSignUp
             // 
-            this.txtEmailSignUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailSignUp.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailSignUp.Location = new System.Drawing.Point(189, 127);
-            this.txtEmailSignUp.Name = "txtEmailSignUp";
-            this.txtEmailSignUp.Size = new System.Drawing.Size(200, 17);
-            this.txtEmailSignUp.TabIndex = 5;
-            this.txtEmailSignUp.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtUsername_MaskInputRejected);
+            this.txtUsernameSignUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsernameSignUp.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsernameSignUp.Location = new System.Drawing.Point(189, 127);
+            this.txtUsernameSignUp.Name = "txtUsernameSignUp";
+            this.txtUsernameSignUp.Size = new System.Drawing.Size(200, 17);
+            this.txtUsernameSignUp.TabIndex = 5;
+            this.txtUsernameSignUp.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtUsername_MaskInputRejected);
             // 
             // txtNameSignUpPage
             // 
@@ -116,16 +120,16 @@
             this.txtNameSignUp.TabIndex = 11;
             this.txtNameSignUp.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtNameSignUp_MaskInputRejected);
             // 
-            // txtPasswordSignUp
+            // txtConfirmPasswordSignUp
             // 
-            this.txtPasswordSignUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPasswordSignUp.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordSignUp.Location = new System.Drawing.Point(189, 221);
-            this.txtPasswordSignUp.Name = "txtPasswordSignUp";
-            this.txtPasswordSignUp.PasswordChar = '*';
-            this.txtPasswordSignUp.Size = new System.Drawing.Size(200, 17);
-            this.txtPasswordSignUp.TabIndex = 14;
-            this.txtPasswordSignUp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtConfirmPasswordSignUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConfirmPasswordSignUp.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPasswordSignUp.Location = new System.Drawing.Point(189, 221);
+            this.txtConfirmPasswordSignUp.Name = "txtConfirmPasswordSignUp";
+            this.txtConfirmPasswordSignUp.PasswordChar = '*';
+            this.txtConfirmPasswordSignUp.Size = new System.Drawing.Size(200, 17);
+            this.txtConfirmPasswordSignUp.TabIndex = 14;
+            this.txtConfirmPasswordSignUp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtConfirmSignUpPage
             // 
@@ -234,6 +238,36 @@
             this.backSignUpPage.TabStop = false;
             this.backSignUpPage.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // btnHideCPW
+            // 
+            this.btnHideCPW.BackgroundImage = global::Final_Project_PBO_1.Properties.Resources.see;
+            this.btnHideCPW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHideCPW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHideCPW.FlatAppearance.BorderSize = 0;
+            this.btnHideCPW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHideCPW.Location = new System.Drawing.Point(373, 218);
+            this.btnHideCPW.Name = "btnHideCPW";
+            this.btnHideCPW.Size = new System.Drawing.Size(16, 20);
+            this.btnHideCPW.TabIndex = 27;
+            this.btnHideCPW.UseVisualStyleBackColor = true;
+            this.btnHideCPW.Visible = false;
+            this.btnHideCPW.Click += new System.EventHandler(this.btnHidePW_Click);
+            // 
+            // btnShowCPW
+            // 
+            this.btnShowCPW.BackgroundImage = global::Final_Project_PBO_1.Properties.Resources.hide;
+            this.btnShowCPW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowCPW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShowCPW.FlatAppearance.BorderSize = 0;
+            this.btnShowCPW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowCPW.Location = new System.Drawing.Point(373, 218);
+            this.btnShowCPW.Name = "btnShowCPW";
+            this.btnShowCPW.Size = new System.Drawing.Size(16, 20);
+            this.btnShowCPW.TabIndex = 26;
+            this.btnShowCPW.UseVisualStyleBackColor = true;
+            this.btnShowCPW.Visible = false;
+            this.btnShowCPW.Click += new System.EventHandler(this.btnShowPW_Click);
+            // 
             // btnHidePW
             // 
             this.btnHidePW.BackgroundImage = global::Final_Project_PBO_1.Properties.Resources.see;
@@ -241,13 +275,13 @@
             this.btnHidePW.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHidePW.FlatAppearance.BorderSize = 0;
             this.btnHidePW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidePW.Location = new System.Drawing.Point(373, 218);
+            this.btnHidePW.Location = new System.Drawing.Point(373, 166);
             this.btnHidePW.Name = "btnHidePW";
             this.btnHidePW.Size = new System.Drawing.Size(16, 20);
-            this.btnHidePW.TabIndex = 27;
+            this.btnHidePW.TabIndex = 29;
             this.btnHidePW.UseVisualStyleBackColor = true;
             this.btnHidePW.Visible = false;
-            this.btnHidePW.Click += new System.EventHandler(this.btnHidePW_Click);
+            this.btnHidePW.Click += new System.EventHandler(this.btnHidePW_Click_1);
             // 
             // btnShowPW
             // 
@@ -256,13 +290,13 @@
             this.btnShowPW.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShowPW.FlatAppearance.BorderSize = 0;
             this.btnShowPW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowPW.Location = new System.Drawing.Point(373, 218);
+            this.btnShowPW.Location = new System.Drawing.Point(373, 166);
             this.btnShowPW.Name = "btnShowPW";
             this.btnShowPW.Size = new System.Drawing.Size(16, 20);
-            this.btnShowPW.TabIndex = 26;
+            this.btnShowPW.TabIndex = 28;
             this.btnShowPW.UseVisualStyleBackColor = true;
             this.btnShowPW.Visible = false;
-            this.btnShowPW.Click += new System.EventHandler(this.btnShowPW_Click);
+            this.btnShowPW.Click += new System.EventHandler(this.btnShowPW_Click_1);
             // 
             // SignUpPage
             // 
@@ -272,6 +306,8 @@
             this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.btnHidePW);
             this.Controls.Add(this.btnShowPW);
+            this.Controls.Add(this.btnHideCPW);
+            this.Controls.Add(this.btnShowCPW);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.backSignUpPage);
             this.Controls.Add(this.btnSignUp);
@@ -281,14 +317,14 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ClearDataSignUp);
-            this.Controls.Add(this.txtPasswordSignUp);
+            this.Controls.Add(this.txtConfirmPasswordSignUp);
             this.Controls.Add(this.txtConfirmSignUpPage);
             this.Controls.Add(this.txtNameSignUpPage);
             this.Controls.Add(this.txtNameSignUp);
-            this.Controls.Add(this.txtUsernameSignUp);
+            this.Controls.Add(this.txtPasswordSignUp);
             this.Controls.Add(this.txtEmailSignUpPage);
             this.Controls.Add(this.txtPasswordSignUpPage);
-            this.Controls.Add(this.txtEmailSignUp);
+            this.Controls.Add(this.txtUsernameSignUp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUpPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -302,13 +338,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtUsernameSignUp;
+        private System.Windows.Forms.TextBox txtPasswordSignUp;
         private System.Windows.Forms.Label txtEmailSignUpPage;
         private System.Windows.Forms.Label txtPasswordSignUpPage;
-        private System.Windows.Forms.MaskedTextBox txtEmailSignUp;
+        private System.Windows.Forms.MaskedTextBox txtUsernameSignUp;
         private System.Windows.Forms.Label txtNameSignUpPage;
         private System.Windows.Forms.MaskedTextBox txtNameSignUp;
-        private System.Windows.Forms.TextBox txtPasswordSignUp;
+        private System.Windows.Forms.TextBox txtConfirmPasswordSignUp;
         private System.Windows.Forms.Label txtConfirmSignUpPage;
         private System.Windows.Forms.LinkLabel ClearDataSignUp;
         private System.Windows.Forms.Label label6;
@@ -319,6 +355,8 @@
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox backSignUpPage;
+        private System.Windows.Forms.Button btnHideCPW;
+        private System.Windows.Forms.Button btnShowCPW;
         private System.Windows.Forms.Button btnHidePW;
         private System.Windows.Forms.Button btnShowPW;
     }
