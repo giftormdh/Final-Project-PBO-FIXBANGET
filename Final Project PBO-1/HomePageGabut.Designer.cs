@@ -1,6 +1,6 @@
 ﻿namespace Final_Project_PBO_1
 {
-    partial class HomePage
+    partial class HomePageGabut
     {
         /// <summary>
         /// Required designer variable.

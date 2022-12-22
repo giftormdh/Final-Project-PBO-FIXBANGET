@@ -116,7 +116,7 @@ namespace Final_Project_PBO_1
             }
             else 
             { 
-            var homepage = new HomePage();
+            var homepage = new HomePageGabut();
             this.Hide();
             homepage.Show();
             AccountController accountController = new AccountController();
