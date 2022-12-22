@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final_Project_PBO_1
 {
-    public partial class HomePage : Form
+    public partial class HomePageGabut : Form
     {
-        public HomePage()
+        public HomePageGabut()
         {
             InitializeComponent();
         }

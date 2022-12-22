@@ -51,7 +51,7 @@ namespace Final_Project_PBO_1
 
             else if (FoundUser != null && txtPasswordSignIn.Text == FoundUser.password)
             {
-                var homepage = new HomePage();
+                var homepage = new HomePageGabut();
                 this.Hide();
                 homepage.Show();
             }
