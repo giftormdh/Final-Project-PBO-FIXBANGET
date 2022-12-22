@@ -63,6 +63,7 @@
             this.Controls.Add(this.lblGearName);
             this.Controls.Add(this.btnRemove);
             this.Name = "CheckOut";
+            this.Load += new System.EventHandler(this.LoadThis);
             this.Size = new System.Drawing.Size(596, 45);
             this.ResumeLayout(false);
 

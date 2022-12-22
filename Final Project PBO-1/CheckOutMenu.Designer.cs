@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBook = new System.Windows.Forms.Button();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
@@ -63,8 +63,8 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.btnBook);
+            this.panel3.Controls.Add(this.dateTimePicker);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -83,25 +83,27 @@
             this.label5.Text = "Book Now";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // button2
+            // btnBook
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Final_Project_PBO_1.Properties.Resources.square_plus;
-            this.button2.Location = new System.Drawing.Point(1056, 32);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 79);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBook.FlatAppearance.BorderSize = 0;
+            this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBook.Image = global::Final_Project_PBO_1.Properties.Resources.square_plus;
+            this.btnBook.Location = new System.Drawing.Point(1056, 32);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(81, 79);
+            this.btnBook.TabIndex = 10;
+            this.btnBook.UseVisualStyleBackColor = true;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.CustomFormat = "ddd, dd MMM yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(98, 82);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(170, 22);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dateTimePicker.CustomFormat = "ddd, dd MMM yyyy";
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker.Location = new System.Drawing.Point(98, 82);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(170, 22);
+            this.dateTimePicker.TabIndex = 9;
+            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // label4
             // 
@@ -143,8 +145,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnBook;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }

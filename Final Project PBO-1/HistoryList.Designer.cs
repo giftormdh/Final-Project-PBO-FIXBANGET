@@ -60,7 +60,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "HistoryList";
-            this.Load += new System.EventHandler.(this.LoadThis)
+            this.Load += new System.EventHandler(this.LoadThis);
             this.Size = new System.Drawing.Size(1249, 59);
             this.ResumeLayout(false);
             this.PerformLayout();

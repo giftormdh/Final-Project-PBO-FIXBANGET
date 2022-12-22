@@ -81,7 +81,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Final_Project_PBO_1.Properties.Resources.exit__1_;
+            this.button4.Image = global::Final_Project_PBO_1.Properties.Resources.Asset_12;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.Location = new System.Drawing.Point(0, 47);
             this.button4.Name = "button4";

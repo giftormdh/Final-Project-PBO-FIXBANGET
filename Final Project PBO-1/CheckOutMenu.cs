@@ -30,5 +30,15 @@ namespace Final_Project_PBO_1
                 CheckList.TabIndex = i;
             }
         }
+
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBook_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

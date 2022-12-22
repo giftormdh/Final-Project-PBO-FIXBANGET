@@ -16,7 +16,10 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
+        public void LoadThis(object sender, EventArgs e)
+        {
 
+        }
         private void btnRemove_Click(object sender, EventArgs e)
         {
             this.lblGearName.Text = "Object Removed";

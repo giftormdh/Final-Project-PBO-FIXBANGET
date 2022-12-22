@@ -41,7 +41,7 @@ namespace Final_Project_PBO_1
         {
             if( txtUsernameSignIn.Text=="variabel_username" && txtPasswordSignIn.Text == "variabel_password")
             {
-                var homepage = new HomePage();
+                var homepage = new MainForm();
                 this.Hide();
                 homepage.Show();
             }
