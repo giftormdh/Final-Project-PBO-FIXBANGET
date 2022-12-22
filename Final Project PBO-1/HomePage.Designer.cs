@@ -28,21 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.testestes = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // testestes
+            // 
+            this.testestes.AutoSize = true;
+            this.testestes.Location = new System.Drawing.Point(252, 145);
+            this.testestes.Name = "testestes";
+            this.testestes.Size = new System.Drawing.Size(0, 13);
+            this.testestes.TabIndex = 0;
+            this.testestes.Click += new System.EventHandler(this.label1_Click);
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 311);
+            this.Controls.Add(this.testestes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomePage";
             this.Text = "TetiRent";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        public System.Windows.Forms.Label testestes;
     }
 }
