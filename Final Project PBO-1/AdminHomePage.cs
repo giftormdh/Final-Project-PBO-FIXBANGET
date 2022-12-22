@@ -31,11 +31,18 @@ namespace Final_Project_PBO_1
 
         private void AdminPageLogout_Click(object sender, EventArgs e)
         {
-            var backtologinpage = new LoginPage();
 
-            this.Hide();
+            DialogResult result = MessageBox.Show("Are you sure you want to Logout?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                var backtologinpage = new LoginPage();
 
-            backtologinpage.Show();
+                this.Hide();
+
+                backtologinpage.Show();
+            }
+
+            
         }
     }
 }

@@ -35,24 +35,25 @@ namespace Final_Project_PBO_1
             AccountController accountController = new AccountController();
             List<Account> accoutList = accountController.GetAllAccount();
             string UsernameToFind = txtUsernameSignIn.Text;
-            Account FoundUser = accoutList.Find(x => x.Name == UsernameToFind);
+            Account AdminUser = accoutList.Find(x => x.id == 1);
+            Account FoundUser = accoutList.Find(x => x.username == UsernameToFind);
 
-            if (FoundUser != null && txtPasswordSignIn.Text == FoundUser.password)
+            if (AdminUser!=null && txtPasswordSignIn.Text == AdminUser.password)
             {
-                var homepage = new HomePage();
-                this.Hide();
-                homepage.Show();
-            }
-
-            else if (txtUsernameSignIn.Text=="admin" && txtPasswordSignIn.Text == "admin")
-            {
-                DialogResult result = MessageBox.Show("Are you sure you want to login as admin?", "Comfirm", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show("Are you sure you want to login as admin?", "Confirm", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     var adminhomepage = new AdminHomePage();
                     this.Hide();
                     adminhomepage.Show();
                 }
+            }
+
+            else if (FoundUser != null && txtPasswordSignIn.Text == FoundUser.password)
+            {
+                var homepage = new HomePage();
+                this.Hide();
+                homepage.Show();
             }
 
             else
