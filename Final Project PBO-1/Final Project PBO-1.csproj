@@ -97,11 +97,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminHomePage.cs">
+    <Compile Include="AdminHomePageBorrower.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminHomePage.Designer.cs">
-      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    <Compile Include="AdminHomePageBorrower.Designer.cs">
+      <DependentUpon>AdminHomePageBorrower.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="FirstPage.cs">
@@ -134,8 +134,8 @@
     <Compile Include="SignUpPage.Designer.cs">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminHomePage.resx">
-      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    <EmbeddedResource Include="AdminHomePageBorrower.resx">
+      <DependentUpon>AdminHomePageBorrower.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
@@ -179,6 +179,8 @@
     <Content Include="imgtetiren.png" />
     <Content Include="imgx.png" />
     <Content Include="imgsee.png" />
+    <None Include="Resources\itemlistlist1.png" />
+    <None Include="Resources\borrowerist1.png" />
     <None Include="Resources\itemlist.png" />
     <None Include="Resources\borrower.png" />
     <None Include="Resources\hide.png" />

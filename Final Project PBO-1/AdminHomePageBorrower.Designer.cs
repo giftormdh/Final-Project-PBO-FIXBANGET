@@ -1,6 +1,6 @@
 ﻿namespace Final_Project_PBO_1
 {
-    partial class AdminHomePage
+    partial class AdminHomePageBorrower
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.AdminPageLogout = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.AdminPageLogout = new System.Windows.Forms.Label();
+            this.btnBorrower = new System.Windows.Forms.Button();
+            this.btnItem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,13 +48,27 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(26)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.AdminPageLogout);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnBorrower);
+            this.panel1.Controls.Add(this.btnItem);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 756);
+            this.panel1.Size = new System.Drawing.Size(150, 500);
             this.panel1.TabIndex = 0;
+            // 
+            // AdminPageLogout
+            // 
+            this.AdminPageLogout.AutoSize = true;
+            this.AdminPageLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AdminPageLogout.Font = new System.Drawing.Font("Poppins SemiBold", 8F, System.Drawing.FontStyle.Bold);
+            this.AdminPageLogout.ForeColor = System.Drawing.Color.White;
+            this.AdminPageLogout.Location = new System.Drawing.Point(42, 459);
+            this.AdminPageLogout.Name = "AdminPageLogout";
+            this.AdminPageLogout.Size = new System.Drawing.Size(51, 19);
+            this.AdminPageLogout.TabIndex = 3;
+            this.AdminPageLogout.Text = "Log Out";
+            this.AdminPageLogout.Click += new System.EventHandler(this.AdminPageLogout_Click);
             // 
             // label4
             // 
@@ -73,66 +81,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Log Out";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(0, 140);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(150, 60);
-            this.panel4.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(54, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Item List";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Final_Project_PBO_1.Properties.Resources.itemlist;
-            this.pictureBox3.Location = new System.Drawing.Point(18, 15);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(0, 80);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(150, 60);
-            this.panel3.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(51, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Borrower List";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Final_Project_PBO_1.Properties.Resources.borrower;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // panel2
             // 
@@ -156,6 +104,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Administrator";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::Final_Project_PBO_1.Properties.Resources.x;
+            this.pictureBox4.Location = new System.Drawing.Point(768, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(20, 17);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Final_Project_PBO_1.Properties.Resources.tetiren;
@@ -166,41 +126,54 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // AdminPageLogout
+            // btnBorrower
             // 
-            this.AdminPageLogout.AutoSize = true;
-            this.AdminPageLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AdminPageLogout.Font = new System.Drawing.Font("Poppins SemiBold", 8F, System.Drawing.FontStyle.Bold);
-            this.AdminPageLogout.ForeColor = System.Drawing.Color.White;
-            this.AdminPageLogout.Location = new System.Drawing.Point(42, 459);
-            this.AdminPageLogout.Name = "AdminPageLogout";
-            this.AdminPageLogout.Size = new System.Drawing.Size(51, 19);
-            this.AdminPageLogout.TabIndex = 3;
-            this.AdminPageLogout.Text = "Log Out";
-            this.AdminPageLogout.Click += new System.EventHandler(this.AdminPageLogout_Click);
+            this.btnBorrower.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(168)))), ((int)(((byte)(7)))));
+            this.btnBorrower.BackgroundImage = global::Final_Project_PBO_1.Properties.Resources.borrowerist1;
+            this.btnBorrower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBorrower.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBorrower.FlatAppearance.BorderSize = 0;
+            this.btnBorrower.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrower.Location = new System.Drawing.Point(0, 80);
+            this.btnBorrower.Name = "btnBorrower";
+            this.btnBorrower.Size = new System.Drawing.Size(150, 60);
+            this.btnBorrower.TabIndex = 5;
+            this.btnBorrower.UseVisualStyleBackColor = false;
+            this.btnBorrower.Click += new System.EventHandler(this.btnBorrower_Click);
             // 
-            // AdminHomePage
+            // btnItem
+            // 
+            this.btnItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(26)))), ((int)(((byte)(56)))));
+            this.btnItem.BackgroundImage = global::Final_Project_PBO_1.Properties.Resources.itemlistlist1;
+            this.btnItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnItem.FlatAppearance.BorderSize = 0;
+            this.btnItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItem.Location = new System.Drawing.Point(0, 140);
+            this.btnItem.Name = "btnItem";
+            this.btnItem.Size = new System.Drawing.Size(150, 60);
+            this.btnItem.TabIndex = 6;
+            this.btnItem.UseVisualStyleBackColor = false;
+            this.btnItem.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // AdminHomePageBorrower
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AdminHomePage";
+            this.Name = "AdminHomePageBorrower";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminHomePage";
             this.Load += new System.EventHandler(this.AdminHomePage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -212,13 +185,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label AdminPageLogout;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnItem;
+        private System.Windows.Forms.Button btnBorrower;
     }
 }

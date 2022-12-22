@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Final_Project_PBO_1
 {
-    public partial class AdminHomePage : Form
+    public partial class AdminHomePageBorrower : Form
     {
-        public AdminHomePage()
+        public AdminHomePageBorrower()
         {
             InitializeComponent();
         }
@@ -43,6 +44,23 @@ namespace Final_Project_PBO_1
             }
 
             
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            btnBorrower.BackColor = Color.FromArgb(15, 26, 56);
+            btnItem.BackColor = Color.FromArgb(242, 168, 7);
+        }
+
+        private void btnBorrower_Click(object sender, EventArgs e)
+        {
+            btnBorrower.BackColor = Color.FromArgb(242, 168, 7);
+            btnItem.BackColor = Color.FromArgb(15, 26, 56);
         }
     }
 }

@@ -83,6 +83,26 @@ namespace Final_Project_PBO_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap borrowerist {
+            get {
+                object obj = ResourceManager.GetObject("borrowerist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap borrowerist1 {
+            get {
+                object obj = ResourceManager.GetObject("borrowerist1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap getstart {
             get {
                 object obj = ResourceManager.GetObject("getstart", resourceCulture);
@@ -106,6 +126,26 @@ namespace Final_Project_PBO_1.Properties {
         internal static System.Drawing.Bitmap itemlist {
             get {
                 object obj = ResourceManager.GetObject("itemlist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemlistlist {
+            get {
+                object obj = ResourceManager.GetObject("itemlistlist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap itemlistlist1 {
+            get {
+                object obj = ResourceManager.GetObject("itemlistlist1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

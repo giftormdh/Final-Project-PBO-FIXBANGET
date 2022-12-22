@@ -38,12 +38,12 @@ namespace Final_Project_PBO_1
             Account AdminUser = accoutList.Find(x => x.id == 1);
             Account FoundUser = accoutList.Find(x => x.username == UsernameToFind);
 
-            if (AdminUser!=null && txtPasswordSignIn.Text == AdminUser.password)
+            if (AdminUser!=null&& txtUsernameSignIn.Text== AdminUser.username && txtPasswordSignIn.Text == AdminUser.password)
             {
                 DialogResult result = MessageBox.Show("Are you sure you want to login as admin?", "Confirm", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    var adminhomepage = new AdminHomePage();
+                    var adminhomepage = new AdminHomePageBorrower();
                     this.Hide();
                     adminhomepage.Show();
                 }
