@@ -83,6 +83,16 @@ namespace Final_Project_PBO_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("add (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add__2_ {
             get {
                 object obj = ResourceManager.GetObject("add (2)", resourceCulture);
@@ -146,6 +156,16 @@ namespace Final_Project_PBO_1.Properties {
         internal static System.Drawing.Bitmap Asset_11 {
             get {
                 object obj = ResourceManager.GetObject("Asset 11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Asset_12 {
+            get {
+                object obj = ResourceManager.GetObject("Asset 12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -36,16 +37,27 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label1.Location = new System.Drawing.Point(761, 13);
+            this.label1.Location = new System.Drawing.Point(633, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Accepted";
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(104, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(523, 34);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Accepted";
+            // 
             // HistoryList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "HistoryList";
             this.Size = new System.Drawing.Size(1249, 59);
@@ -57,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
