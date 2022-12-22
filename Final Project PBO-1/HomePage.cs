@@ -66,5 +66,90 @@ namespace Final_Project_PBO_1
         {
 
         }
+
+        private void guna2DataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lists1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList10_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList12_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList8_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxList2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        /*private void lists1_Load_1(object sender, EventArgs e)
+        {
+            lists1.Height = 73;
+        }*/
     }
 }
