@@ -36,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Avalonia.Remote.Protocol, Version=0.10.18.0, Culture=neutral, PublicKeyToken=7ecde292c616a9f3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Avalonia.Remote.Protocol.0.10.18\lib\netstandard2.0\Avalonia.Remote.Protocol.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -103,6 +106,24 @@
     <Compile Include="AdminHomePageBorrower.Designer.cs">
       <DependentUpon>AdminHomePageBorrower.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminPageBorrowerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminPageBorrowerList.Designer.cs">
+      <DependentUpon>AdminPageBorrowerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPageItemList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminPageItemList.Designer.cs">
+      <DependentUpon>AdminPageItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPageUserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminPageUserList.Designer.cs">
+      <DependentUpon>AdminPageUserList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="FirstPage.cs">
       <SubType>Form</SubType>
@@ -136,6 +157,15 @@
     </Compile>
     <EmbeddedResource Include="AdminHomePageBorrower.resx">
       <DependentUpon>AdminHomePageBorrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPageBorrowerList.resx">
+      <DependentUpon>AdminPageBorrowerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPageItemList.resx">
+      <DependentUpon>AdminPageItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPageUserList.resx">
+      <DependentUpon>AdminPageUserList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
@@ -179,6 +209,7 @@
     <Content Include="imgtetiren.png" />
     <Content Include="imgx.png" />
     <Content Include="imgsee.png" />
+    <None Include="Resources\userlist.png" />
     <None Include="Resources\itemlistlist1.png" />
     <None Include="Resources\borrowerist1.png" />
     <None Include="Resources\itemlist.png" />
