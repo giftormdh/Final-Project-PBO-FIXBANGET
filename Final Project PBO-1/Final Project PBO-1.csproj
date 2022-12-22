@@ -215,11 +215,6 @@
     <Compile Include="FirstPage.Designer.cs">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="GearListsDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GearListsDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="HistoryList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,17 +293,6 @@
     <EmbeddedResource Include="SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="GearListsDataSet1.xsc">
-      <DependentUpon>GearListsDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="GearListsDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GearListsDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GearListsDataSet1.xss">
-      <DependentUpon>GearListsDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -324,13 +308,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GearLists.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="GearLists_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>GearLists.mdf</DependentUpon>
-    </Content>
     <Content Include="imgtetiren.png" />
     <None Include="Resources\Asset 12.png" />
     <None Include="Resources\add %281%291.png" />
