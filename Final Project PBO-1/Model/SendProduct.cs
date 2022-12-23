@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Final_Project_PBO_1.Model
 {
-    internal class ProductHistory
+    internal class SendProduct
     {
         public int id { get; set; }
-        public string Name { get; set; }
-        public string borrowState { get; set; }
+        public string name { get; set; }
+        public string category { get; set; }
+        public bool isAvailable { get; set; }
     }
 }
-
