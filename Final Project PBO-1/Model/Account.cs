@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Final_Project_PBO_1.Model
 {
-    internal class ProductHistory
+    internal class Account
     {
         public int id { get; set; }
         public string Name { get; set; }
-        public string borrowState { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
+        public List<ProductHistory> productHistory { get; set; }
+
+
     }
 }
-
