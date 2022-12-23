@@ -35,8 +35,8 @@ namespace Final_Project_PBO_1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-           /* this.lblGearName.Text = "It Works";*/
-
+            //masukin ke list
+            //ganti warna
         }
 
 
