@@ -197,6 +197,7 @@
     <Compile Include="Controls\BoxList.Designer.cs">
       <DependentUpon>BoxList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cart.cs" />
     <Compile Include="Controls\CheckOut.cs">
       <SubType>UserControl</SubType>
     </Compile>

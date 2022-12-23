@@ -1,5 +1,6 @@
 ﻿using Final_Project_PBO_1.Controller;
 using Final_Project_PBO_1.Model;
+using Final_Project_PBO_1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CartTemp;
 
 namespace Final_Project_PBO_1
 {
@@ -23,12 +25,22 @@ namespace Final_Project_PBO_1
         {
             ProductController productController = new ProductController();
             List<Product> productList = productController.GetAllProduct();
-
-            string changeName = productList.Find(y=>y.id==this.TabIndex+1).name.ToString();
-            lblGearName.Text = changeName;
-            bool changeAvailability = productList.Find(y => y.id == this.TabIndex + 1).isAvailable;
-            if (changeAvailability == false)
+            /*            productList[0].get;*/
+            if (productList.Exists(x => x.id == TabIndex + 1))
             {
+                string changeName = productList.Find(x => x.id == this.TabIndex + 1).name;
+                lblGearName.Text = changeName;
+                bool changeAvailability = productList.Find(y => y.id == this.TabIndex + 1).isAvailable;
+                if (changeAvailability == false)
+                {
+                    lblAvailability.Text = "Unavailable";
+                    lblAvailability.ForeColor = System.Drawing.Color.OrangeRed;
+                }
+            }
+            else
+            {
+                lblGearName.Text = "Object not Found";
+                lblGearName.ForeColor= System.Drawing.Color.OrangeRed;
                 lblAvailability.Text = "Unavailable";
                 lblAvailability.ForeColor = System.Drawing.Color.OrangeRed;
             }
@@ -36,7 +48,15 @@ namespace Final_Project_PBO_1
         private void button1_Click(object sender, EventArgs e)
         {
             //masukin ke list
+
+            /*Cart cart = new Cart();*/
+            ProductController productController = new ProductController();
+            List<Product> productList = productController.GetAllProduct();
+            string Name = productList.Find(y => y.id == this.TabIndex + 1).name.ToString();
+            Cart.add(Name);
             //ganti warna
+
+
         }
 
 

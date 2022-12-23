@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Final_Project_PBO_1.Model;
+using CartTemp;
 
 namespace Final_Project_PBO_1
 {
@@ -13,6 +14,7 @@ namespace Final_Project_PBO_1
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
         [STAThread]
         static void Main()
         {
@@ -25,6 +27,7 @@ namespace Final_Project_PBO_1
                 productController.PostProduct("Kamerade", "sadkategorikamera", false);
                 productController.PostProduct("akuKamerade", "sadkategorikameradas", true);
             }*/
+            /*Cart cart = new Cart();*/
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

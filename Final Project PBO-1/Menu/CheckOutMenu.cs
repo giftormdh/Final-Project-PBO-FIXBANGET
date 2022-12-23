@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CartTemp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Media3D;
+using Final_Project_PBO_1.Model;
+using Final_Project_PBO_1.Controller;
+
 
 namespace Final_Project_PBO_1
 {
@@ -21,7 +25,8 @@ namespace Final_Project_PBO_1
         }
         public void CheckOutMenu_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 18; i++)
+            /*art cart = new Cart();*/
+            for (int i = 0; i < Cart.len(); i++)
             {
                 CheckOut CheckList = new Final_Project_PBO_1.CheckOut();
                 this.panel1.Controls.Add(CheckList);
@@ -32,8 +37,11 @@ namespace Final_Project_PBO_1
                 CheckList.Name = "checkOut";
                 CheckList.Size = new System.Drawing.Size(596, 41);
                 CheckList.TabIndex = i;
-
             }
+/*            for (int i = 0; i < 18; i++)//for all in list
+            {
+
+            }*/
         }
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -43,10 +51,15 @@ namespace Final_Project_PBO_1
 
         private void btnBook_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 18; i++)
+
+            for (int i = 0; i < Cart.len(); i++)//for all in list
             {
-                this.panel1.Controls.Clear();
+                ProductController productController = new ProductController();
+                productController.PostProductHistory(Cart.show(i), "Pending");
             }
+            //masuk ke producthistory
+            Cart.clear();
+           this.panel1.Controls.Clear();
         }
     }
 }
