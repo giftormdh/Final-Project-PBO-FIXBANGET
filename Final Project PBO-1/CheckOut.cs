@@ -22,8 +22,8 @@ namespace Final_Project_PBO_1
         }
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            this.lblGearName.Text = "Object Removed";
-
+            /*this.lblGearName.Text = "Object Removed";*/
+            this.Hide();    
         }
     }
 }

@@ -37,8 +37,6 @@ namespace Final_Project_PBO_1
             menuHome.Size = new System.Drawing.Size(1249, 704);
             menuHome.TabIndex = 0;
 
-
-
             menuHome.HomeMenu_Load(sender,e);
         }
 
@@ -73,6 +71,19 @@ namespace Final_Project_PBO_1
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to Logout?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                var backtologinpage = new LoginPage();
+
+                this.Hide();
+
+                backtologinpage.Show();
+            }
         }
     }
 }
