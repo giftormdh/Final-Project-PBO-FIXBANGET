@@ -179,6 +179,7 @@
             // 
             // adminPageUserList1
             // 
+            this.adminPageUserList1.BackColor = System.Drawing.Color.White;
             this.adminPageUserList1.Location = new System.Drawing.Point(150, 0);
             this.adminPageUserList1.Name = "adminPageUserList1";
             this.adminPageUserList1.Size = new System.Drawing.Size(650, 500);
@@ -186,6 +187,7 @@
             // 
             // adminPageItemList1
             // 
+            this.adminPageItemList1.BackColor = System.Drawing.Color.White;
             this.adminPageItemList1.Location = new System.Drawing.Point(150, 0);
             this.adminPageItemList1.Name = "adminPageItemList1";
             this.adminPageItemList1.Size = new System.Drawing.Size(650, 500);
@@ -207,10 +209,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.adminPageUserList1);
-            this.Controls.Add(this.adminPageItemList1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.AdminPageBorrowerList1);
+            this.Controls.Add(this.adminPageUserList1);
+            this.Controls.Add(this.adminPageItemList1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminHomePageBorrower";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

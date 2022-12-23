@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Final_Project_PBO_1.Controller;
+using Final_Project_PBO_1.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +18,11 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

@@ -30,8 +30,10 @@
         {
             this.HeaderBorrower = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewBorrower = new System.Windows.Forms.DataGridView();
             this.HeaderBorrower.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBorrower)).BeginInit();
             this.SuspendLayout();
             // 
             // HeaderBorrower
@@ -53,17 +55,30 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // dataGridViewBorrower
+            // 
+            this.dataGridViewBorrower.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewBorrower.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBorrower.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(26)))), ((int)(((byte)(56)))));
+            this.dataGridViewBorrower.Location = new System.Drawing.Point(25, 100);
+            this.dataGridViewBorrower.Name = "dataGridViewBorrower";
+            this.dataGridViewBorrower.Size = new System.Drawing.Size(600, 300);
+            this.dataGridViewBorrower.TabIndex = 1;
+            this.dataGridViewBorrower.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // AdminPageBorrowerList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dataGridViewBorrower);
             this.Controls.Add(this.HeaderBorrower);
             this.Name = "AdminPageBorrowerList";
             this.Size = new System.Drawing.Size(650, 500);
             this.Load += new System.EventHandler(this.AdminPageBorrowerList_Load);
             this.HeaderBorrower.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBorrower)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,5 +86,6 @@
         #endregion
         private System.Windows.Forms.Panel HeaderBorrower;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridViewBorrower;
     }
 }

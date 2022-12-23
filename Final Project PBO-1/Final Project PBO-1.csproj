@@ -77,6 +77,8 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
@@ -100,6 +102,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accounts.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AdminHomePageBorrower.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,12 +137,6 @@
     </Compile>
     <Compile Include="FirstPage.Designer.cs">
       <DependentUpon>FirstPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HomePageGabut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HomePageGabut.Designer.cs">
-      <DependentUpon>HomePageGabut.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -170,9 +171,6 @@
     <EmbeddedResource Include="FirstPage.resx">
       <DependentUpon>FirstPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePageGabut.resx">
-      <DependentUpon>HomePageGabut.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +187,17 @@
     <EmbeddedResource Include="SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Accounts.xsc">
+      <DependentUpon>Accounts.xsd</DependentUpon>
+    </None>
+    <None Include="Accounts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accounts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Accounts.xss">
+      <DependentUpon>Accounts.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -222,6 +231,9 @@
     <None Include="Resources\getstart.png" />
     <None Include="Resources\userprofile.png" />
     <Content Include="imggetstart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
