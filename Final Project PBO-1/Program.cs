@@ -18,16 +18,7 @@ namespace Final_Project_PBO_1
         [STAThread]
         static void Main()
         {
-          /*  ProductController productController = new ProductController();
-            List<Product> productList = productController.GetAllProduct();
-            for (int i = 0; i < 3; i++)
-            {
-                productController.PostProduct("Kamera", "kategorikamera", true);
-                productController.PostProduct("Kamerade", "sadkategorikamera", true);
-                productController.PostProduct("Kamerade", "sadkategorikamera", false);
-                productController.PostProduct("akuKamerade", "sadkategorikameradas", true);
-            }*/
-            /*Cart cart = new Cart();*/
+            Cart.setCount();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

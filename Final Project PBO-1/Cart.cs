@@ -9,15 +9,25 @@ namespace CartTemp
     public static class Cart
     {
         private static List<string> TempCart = new List<string>();
-
+        private static int CartCount;
+        public static void setCount()
+        {
+            CartCount = 0;
+        }
+        public static int getCount()
+        {
+            return CartCount;
+        }
         public static void add(string name)
         {
             TempCart.Add(name);
+            CartCount++;
         }
         public static void remove(int i)
         {
             TempCart.RemoveAt(i);
-            for(int j=i+1; j < TempCart.Count; j++)
+            CartCount--;
+            for(int j=i+1; j < CartCount; j++)
             {
                 if (TempCart[j + 1] != null)
                 {
@@ -28,14 +38,15 @@ namespace CartTemp
         }
         public static string show(int i)
         {
-            return TempCart[i];
+                return TempCart[i];
         }
         public static int len()
         {
-            return TempCart.Count;
+                return TempCart.Count;
         }
         public static void clear()
         {
+            CartCount = 0;
             TempCart.Clear();  
         }
 

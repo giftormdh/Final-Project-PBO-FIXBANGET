@@ -191,6 +191,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AccountController.cs" />
+    <Compile Include="Controller\LoginSignupSessionController.cs" />
     <Compile Include="Controls\BoxList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -246,7 +248,9 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Account.cs" />
     <Compile Include="Model\ProductHistory.cs" />
+    <Compile Include="Model\SendAccount.cs" />
     <Compile Include="Model\SendProduct.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Controller\ProductController.cs" />
@@ -315,6 +319,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="imgtetiren.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\see.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\x.png" />
     <None Include="Resources\Asset 12.png" />
     <None Include="Resources\add %281%291.png" />
     <None Include="Resources\square-plus.png" />

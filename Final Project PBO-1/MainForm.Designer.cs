@@ -33,7 +33,6 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCO = new System.Windows.Forms.Button();
-            this.btnHistory = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -54,7 +53,6 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.btnCO);
-            this.panel1.Controls.Add(this.btnHistory);
             this.panel1.Controls.Add(this.btnHome);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -106,7 +104,7 @@
             this.btnCO.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCO.ForeColor = System.Drawing.Color.White;
             this.btnCO.Image = global::Final_Project_PBO_1.Properties.Resources.add;
-            this.btnCO.Location = new System.Drawing.Point(0, 390);
+            this.btnCO.Location = new System.Drawing.Point(0, 342);
             this.btnCO.Margin = new System.Windows.Forms.Padding(0);
             this.btnCO.Name = "btnCO";
             this.btnCO.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
@@ -117,25 +115,6 @@
             this.btnCO.UseVisualStyleBackColor = true;
             this.btnCO.Click += new System.EventHandler(this.btnCO_Click);
             // 
-            // btnHistory
-            // 
-            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistory.FlatAppearance.BorderSize = 0;
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.ForeColor = System.Drawing.Color.White;
-            this.btnHistory.Image = global::Final_Project_PBO_1.Properties.Resources.time_past__1_;
-            this.btnHistory.Location = new System.Drawing.Point(0, 318);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.btnHistory.Size = new System.Drawing.Size(101, 72);
-            this.btnHistory.TabIndex = 3;
-            this.btnHistory.Text = " History";
-            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnHistory.UseVisualStyleBackColor = true;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
-            // 
             // btnHome
             // 
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
@@ -144,7 +123,7 @@
             this.btnHome.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = global::Final_Project_PBO_1.Properties.Resources.home__2_;
-            this.btnHome.Location = new System.Drawing.Point(0, 246);
+            this.btnHome.Location = new System.Drawing.Point(0, 270);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
@@ -160,7 +139,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(101, 246);
+            this.panel2.Size = new System.Drawing.Size(101, 270);
             this.panel2.TabIndex = 0;
             // 
             // panel6
@@ -184,7 +163,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(222, 27);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Giftor Rapopo";
+            this.label1.Text = "AccountName";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
@@ -252,7 +231,6 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnCO;
-        private System.Windows.Forms.Button btnHistory;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;

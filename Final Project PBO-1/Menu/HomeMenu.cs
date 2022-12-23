@@ -25,11 +25,10 @@ namespace Final_Project_PBO_1
             List<Product> productList = productController.GetAllProduct();
 
             int ItemNum = productList.Count;
-
-            for (int i = 0; i <= ItemNum; i++)
+            if (ItemNum != 0)
             {
-              /*  if (productList.Exists(x=>x.id==i+1))
-                {*/
+                for (int i = 0; i <= ItemNum; i++)
+                {
                     BoxList Container = new Final_Project_PBO_1.BoxList();
                     this.panel3.Controls.Add(Container);
 
@@ -39,8 +38,7 @@ namespace Final_Project_PBO_1
                     Container.Name = "boxList1";
                     Container.Size = new System.Drawing.Size(257, 165);
                     Container.TabIndex = i;
-                /*}*/
-
+                }
             }
         }
 

@@ -10,19 +10,21 @@ using System.Security.Principal;
 
 namespace Final_Project_PBO_1.Controller
 {
-    internal class ProductController
+    internal class AccountController
     {
-        public string productUrl = "http://localhost:7100/api/Product/";
-        public void PostProduct(string name, bool isAvailable)
+        public string accountUrl = "http://localhost:7100/api/Account/";
+        public void PostAccount(string name, string username, string password)
         {
-            SendProduct CheckOutItems = new SendProduct();
+            SendAccount SignUpData = new SendAccount();
 
-            CheckOutItems.name = name;
-            CheckOutItems.isAvailable = isAvailable;
+            SignUpData.Name = name;
+            SignUpData.username = username;
+            SignUpData.password = password;
+            SignUpData.productHistory = new List<ProductHistory>() { };
 
-            var CheckOutItemsJson = JsonConvert.SerializeObject(CheckOutItems);
+            var SignUpDataJson = JsonConvert.SerializeObject(SignUpData);
 
-            var postUrl = productUrl;
+            var postUrl = accountUrl;
             var client = new RestClient();
             var request = new RestRequest()
             {
@@ -31,43 +33,42 @@ namespace Final_Project_PBO_1.Controller
 
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Accept", "application/xml");
-            request.AddJsonBody(CheckOutItemsJson);
+            request.AddJsonBody(SignUpDataJson);
 
             var response = client.Post(request);
         }
 
-        public List<Product> GetAllProduct()
+        public List<Account> GetAllAccount()
         {
-            var postUrl = productUrl;
+            var postUrl = accountUrl;
             var client = new RestClient();
             var request = new RestRequest()
             {
                 Resource = postUrl
             };
             var response = client.Get(request);
-            List<Product> productList = JsonConvert.DeserializeObject<List<Product>>(response.Content);
-            return productList;
+            List<Account> accountList = JsonConvert.DeserializeObject<List<Account>>(response.Content);
+            return accountList;
         }
-        public Product GetProductById(int id)
+
+        public Account GetAccountById(int id)
         {
-            var postUrl = productUrl + id;
+            var postUrl = accountUrl + id;
             var client = new RestClient();
             var request = new RestRequest()
             {
                 Resource = postUrl
             };
             var response = client.Get(request);
-
-            Product foundProduct = JsonConvert.DeserializeObject<Product>(response.Content);
-
-            return foundProduct;
+            Account foundAcc = JsonConvert.DeserializeObject<Account>(response.Content);
+            return foundAcc;
         }
 
-        public void EditProductById(Product editProduct, int id)
+        public void EditAccountById(Account editAcc, int id)
         {
-            var EditedProductJson = JsonConvert.SerializeObject(editProduct);
+            var EditedAccJson = JsonConvert.SerializeObject(editAcc);
 
-            var postUrl = productUrl + id;
+            var postUrl = accountUrl + id;
             var client = new RestClient();
             var request = new RestRequest()
             {
@@ -76,14 +77,14 @@ namespace Final_Project_PBO_1.Controller
 
             request.AddHeader("Content-Type", "application/json");
             request.AddHeader("Accept", "application/xml");
-            request.AddJsonBody(editProduct);
+            request.AddJsonBody(EditedAccJson);
 
             var response = client.Put(request);
         }
 
-        public void DeleteProductById(int id)
+        public void DeleteAccountById(int id)
         {
-            var postUrl = productUrl + id;
+            var postUrl = accountUrl + id;
             var client = new RestClient();
             var request = new RestRequest()
             {
@@ -91,5 +92,6 @@ namespace Final_Project_PBO_1.Controller
             };
             var response = client.Delete(request);
         }
+
     }
 }

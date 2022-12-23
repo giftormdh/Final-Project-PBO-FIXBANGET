@@ -18,30 +18,23 @@ namespace Final_Project_PBO_1
     public partial class CheckOutMenu : UserControl
     {
         CheckOut CheckList = new Final_Project_PBO_1.CheckOut();
-
         public CheckOutMenu()
         {
             InitializeComponent();
         }
         public void CheckOutMenu_Load(object sender, EventArgs e)
         {
-            /*art cart = new Cart();*/
-            for (int i = 0; i < Cart.len(); i++)
+            for (int i = 0; i < Cart.getCount(); i++)
             {
                 CheckOut CheckList = new Final_Project_PBO_1.CheckOut();
                 this.panel1.Controls.Add(CheckList);
 
-                /*string name = "checkOut"+i.ToString();*/
                 CheckList.Location = new System.Drawing.Point(93, (i * 50));
                 CheckList.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
                 CheckList.Name = "checkOut";
                 CheckList.Size = new System.Drawing.Size(596, 41);
                 CheckList.TabIndex = i;
             }
-/*            for (int i = 0; i < 18; i++)//for all in list
-            {
-
-            }*/
         }
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -51,15 +44,16 @@ namespace Final_Project_PBO_1
 
         private void btnBook_Click(object sender, EventArgs e)
         {
-
-            for (int i = 0; i < Cart.len(); i++)//for all in list
+            LoginSignupSessionController loginSessionController = new LoginSignupSessionController();
+            ProductHistory prodHis = new ProductHistory();
+            Account currentAccount = loginSessionController.getLoggedAccount();
+            for (int i = 0; i < Cart.getCount(); i++)
             {
-                ProductController productController = new ProductController();
-                productController.PostProductHistory(Cart.show(i), "Pending");
+                prodHis.Name = Cart.show(i);
             }
-            //masuk ke producthistory
+            currentAccount.productHistory.Add(prodHis);
             Cart.clear();
-           this.panel1.Controls.Clear();
+            this.panel1.Controls.Clear();
         }
     }
 }

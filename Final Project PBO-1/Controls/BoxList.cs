@@ -24,13 +24,12 @@ namespace Final_Project_PBO_1
         public void LoadThis(object sender , EventArgs e)
         {
             ProductController productController = new ProductController();
-            List<Product> productList = productController.GetAllProduct();
-            /*            productList[0].get;*/
-            if (productList.Exists(x => x.id == TabIndex + 1))
+
+            if (productController.GetProductById(this.TabIndex + 1).name!=null)
             {
-                string changeName = productList.Find(x => x.id == this.TabIndex + 1).name;
+                string changeName = productController.GetProductById(this.TabIndex+1).name;
                 lblGearName.Text = changeName;
-                bool changeAvailability = productList.Find(y => y.id == this.TabIndex + 1).isAvailable;
+                bool changeAvailability = productController.GetProductById(this.TabIndex + 1).isAvailable;
                 if (changeAvailability == false)
                 {
                     lblAvailability.Text = "Unavailable";
@@ -47,18 +46,9 @@ namespace Final_Project_PBO_1
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //masukin ke list
-
-            /*Cart cart = new Cart();*/
             ProductController productController = new ProductController();
-            List<Product> productList = productController.GetAllProduct();
-            string Name = productList.Find(y => y.id == this.TabIndex + 1).name.ToString();
+            string Name = productController.GetProductById(this.TabIndex + 1).name;
             Cart.add(Name);
-            //ganti warna
-
-
         }
-
-
     }
 }
