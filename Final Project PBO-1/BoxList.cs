@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Final_Project_PBO_1.Controller;
+using Final_Project_PBO_1.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,17 @@ namespace Final_Project_PBO_1
 
         public void LoadThis(object sender , EventArgs e)
         {
+            ProductController productController = new ProductController();
+            List<Product> productList = productController.GetAllProduct();
 
+            string changeName = productList.Find(y=>y.id==this.TabIndex+1).name.ToString();
+            lblGearName.Text = changeName;
+            bool changeAvailability = productList.Find(y => y.id == this.TabIndex + 1).isAvailable;
+            if (changeAvailability == false)
+            {
+                lblAvailability.Text = "Unavailable";
+                lblAvailability.ForeColor = System.Drawing.Color.OrangeRed;
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Final_Project_PBO_1.Controller;
+using Final_Project_PBO_1.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +18,15 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
-
+        
         public void HomeMenu_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
+            ProductController productController = new ProductController();
+            List<Product> productList = productController.GetAllProduct();
+
+            int ItemNum = productList.Count;
+
+            for (int i = 0; i < ItemNum; i++)
             {
                 BoxList Container = new Final_Project_PBO_1.BoxList();
                 this.panel3.Controls.Add(Container);

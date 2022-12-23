@@ -20,57 +20,50 @@ namespace Final_Project_PBO_1
         {
             InitializeComponent();
         }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             btnHome_Click(sender, e);
         }
 
-            private void btnHome_Click(object sender, EventArgs e)
+        private void showPanel(Control add, Control remove1, Control remove2)
         {
-            this.panel3.Controls.Remove(menuHistory);
-            this.panel3.Controls.Remove(menuCheckOut);
-            this.panel3.Controls.Add(menuHome);
+            panel3.Controls.Remove(remove1);
+            panel3.Controls.Remove(remove2);
+            panel3.Controls.Add(add);
 
-            menuHome.Location = new System.Drawing.Point(0, 0);
-            menuHome.Name = "homeMenu1";
-            menuHome.Size = new System.Drawing.Size(1249, 704);
-            menuHome.TabIndex = 0;
+            add.Location = new System.Drawing.Point(0, 0);
+            add.Size = new System.Drawing.Size(1249, 704);
+            add.TabIndex = 0;
+        }
+        private void changeMenu(Control add, Control remove1, Control remove2)
+        {
+            remove2.BackColor = Color.FromArgb(15, 26, 56);
+            remove1.BackColor = Color.FromArgb(15, 26, 56);
+            add.BackColor = Color.FromArgb(242, 168, 7);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            changeMenu(btnHome, btnCO, btnHistory);
+            showPanel(menuHome, menuCheckOut, menuHistory);
 
             menuHome.HomeMenu_Load(sender,e);
         }
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
-            this.panel3.Controls.Remove(menuHome);
-            this.panel3.Controls.Remove(menuCheckOut);
-            this.panel3.Controls.Add(menuHistory);
-
-            menuHistory.Location = new System.Drawing.Point(0, 0);
-            menuHistory.Name = "historyMenu1";
-            menuHistory.Size = new System.Drawing.Size(1249, 704);
-            menuHistory.TabIndex = 0;
+            changeMenu(btnHistory, btnHome, btnCO);
+            showPanel(menuHistory, menuHome, menuCheckOut);
 
             menuHistory.HistoryMenu_Load(sender,e);
         }
 
         private void btnCO_Click(object sender, EventArgs e)
         {
-            this.panel3.Controls.Remove(menuHome);
-            this.panel3.Controls.Remove(menuHistory);
-            this.panel3.Controls.Add(menuCheckOut);
-
-            menuCheckOut.Location = new System.Drawing.Point(0, 0);
-            menuCheckOut.Name = "COMenu1";
-            menuCheckOut.Size = new System.Drawing.Size(1249, 704);
-            menuCheckOut.TabIndex = 0;
+            changeMenu(btnCO, btnHistory, btnHome);
+            showPanel(menuCheckOut, menuHistory, menuHome);
 
             menuCheckOut.CheckOutMenu_Load(sender,e);   
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -85,5 +78,12 @@ namespace Final_Project_PBO_1
                 backtologinpage.Show();
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+      
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblGearName = new System.Windows.Forms.Label();
-            this.lblGearCategory = new System.Windows.Forms.Label();
             this.lblAvailability = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,23 +42,10 @@
             this.lblGearName.Location = new System.Drawing.Point(0, 0);
             this.lblGearName.Margin = new System.Windows.Forms.Padding(0);
             this.lblGearName.Name = "lblGearName";
-            this.lblGearName.Size = new System.Drawing.Size(259, 34);
+            this.lblGearName.Size = new System.Drawing.Size(259, 62);
             this.lblGearName.TabIndex = 0;
             this.lblGearName.Text = "GearName";
             this.lblGearName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblGearCategory
-            // 
-            this.lblGearCategory.BackColor = System.Drawing.Color.Transparent;
-            this.lblGearCategory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblGearCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblGearCategory.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGearCategory.Location = new System.Drawing.Point(0, 34);
-            this.lblGearCategory.Name = "lblGearCategory";
-            this.lblGearCategory.Size = new System.Drawing.Size(259, 39);
-            this.lblGearCategory.TabIndex = 1;
-            this.lblGearCategory.Text = "GearCategory";
-            this.lblGearCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAvailability
             // 
@@ -68,7 +54,7 @@
             this.lblAvailability.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAvailability.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvailability.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblAvailability.Location = new System.Drawing.Point(0, 73);
+            this.lblAvailability.Location = new System.Drawing.Point(0, 62);
             this.lblAvailability.Name = "lblAvailability";
             this.lblAvailability.Size = new System.Drawing.Size(259, 28);
             this.lblAvailability.TabIndex = 2;
@@ -81,7 +67,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Final_Project_PBO_1.Properties.Resources.Asset_11;
-            this.button1.Location = new System.Drawing.Point(0, 101);
+            this.button1.Location = new System.Drawing.Point(0, 90);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(259, 47);
             this.button1.TabIndex = 3;
@@ -94,7 +80,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblAvailability);
-            this.Controls.Add(this.lblGearCategory);
             this.Controls.Add(this.lblGearName);
             this.Name = "BoxList";
             this.Size = new System.Drawing.Size(259, 151);
@@ -106,7 +91,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblGearName;
-        private System.Windows.Forms.Label lblGearCategory;
         private System.Windows.Forms.Label lblAvailability;
         private System.Windows.Forms.Button button1;
     }
