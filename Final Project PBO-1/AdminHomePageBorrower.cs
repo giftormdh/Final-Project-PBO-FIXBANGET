@@ -20,9 +20,9 @@ namespace Final_Project_PBO_1
 
         private void label4_Click(object sender, EventArgs e)
         {
-            var homepage = new HomePageGabut();
-            this.Hide();
-            homepage.Show();
+            //var homepage = new HomePageGabut();
+            //this.Hide();
+            //homepage.Show();
         }
 
         private void AdminHomePage_Load(object sender, EventArgs e)
