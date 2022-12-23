@@ -30,8 +30,10 @@
         {
             this.HeaderBorrower = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewItem = new System.Windows.Forms.DataGridView();
             this.HeaderBorrower.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).BeginInit();
             this.SuspendLayout();
             // 
             // HeaderBorrower
@@ -53,15 +55,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // dataGridViewItem
+            // 
+            this.dataGridViewItem.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewItem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(26)))), ((int)(((byte)(56)))));
+            this.dataGridViewItem.Location = new System.Drawing.Point(25, 100);
+            this.dataGridViewItem.Name = "dataGridViewItem";
+            this.dataGridViewItem.Size = new System.Drawing.Size(600, 300);
+            this.dataGridViewItem.TabIndex = 2;
+            // 
             // AdminPageItemList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dataGridViewItem);
             this.Controls.Add(this.HeaderBorrower);
             this.Name = "AdminPageItemList";
             this.Size = new System.Drawing.Size(650, 500);
             this.HeaderBorrower.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -70,5 +85,6 @@
 
         private System.Windows.Forms.Panel HeaderBorrower;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridViewItem;
     }
 }

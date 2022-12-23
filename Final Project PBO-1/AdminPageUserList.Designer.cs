@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.HeaderBorrower = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewUser = new System.Windows.Forms.DataGridView();
+            this.accounts = new Final_Project_PBO_1.Accounts();
+            this.accountsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.accountsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.HeaderBorrower.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accounts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // HeaderBorrower
@@ -53,15 +62,47 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // dataGridViewUser
+            // 
+            this.dataGridViewUser.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUser.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(26)))), ((int)(((byte)(56)))));
+            this.dataGridViewUser.Location = new System.Drawing.Point(25, 100);
+            this.dataGridViewUser.Name = "dataGridViewUser";
+            this.dataGridViewUser.Size = new System.Drawing.Size(600, 300);
+            this.dataGridViewUser.TabIndex = 2;
+            this.dataGridViewUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // accounts
+            // 
+            this.accounts.DataSetName = "Accounts";
+            this.accounts.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // accountsBindingSource
+            // 
+            this.accountsBindingSource.DataSource = this.accounts;
+            this.accountsBindingSource.Position = 0;
+            // 
+            // accountsBindingSource1
+            // 
+            this.accountsBindingSource1.DataSource = this.accounts;
+            this.accountsBindingSource1.Position = 0;
+            // 
             // AdminPageUserList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dataGridViewUser);
             this.Controls.Add(this.HeaderBorrower);
             this.Name = "AdminPageUserList";
             this.Size = new System.Drawing.Size(650, 500);
             this.HeaderBorrower.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accounts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -70,5 +111,9 @@
 
         private System.Windows.Forms.Panel HeaderBorrower;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridViewUser;
+        private System.Windows.Forms.BindingSource accountsBindingSource;
+        private Accounts accounts;
+        private System.Windows.Forms.BindingSource accountsBindingSource1;
     }
 }

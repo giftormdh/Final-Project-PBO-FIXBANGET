@@ -21,7 +21,7 @@ namespace Final_Project_PBO_1
         private void label4_Click(object sender, EventArgs e)
         {
             //var homepage = new HomePageGabut();
-            this.Hide();
+            //this.Hide();
             //homepage.Show();
         }
 

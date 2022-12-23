@@ -13,5 +13,7 @@ namespace Final_Project_PBO_1.Model
         public string username { get; set; }
         public string password { get; set; }
         public List<ProductHistory> productHistory { get; set; }
+
+
     }
 }

@@ -118,7 +118,7 @@ namespace Final_Project_PBO_1
             {
             DialogResult successsignup = MessageBox.Show("Sign Up Successfully");
             //var homepage = new HomePageGabut();
-            this.Hide();
+            //this.Hide();
             //homepage.Show();
             AccountController accountController = new AccountController();
             accountController.PostAccount(txtNameSignUp.Text, txtUsernameSignUp.Text, txtPasswordSignUp.Text);
